@@ -8,3 +8,6 @@ https://tutorials.eu/how-to-use-character-animation-from-mixamo-website-in-unity
 https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP  
 
 
+## git hints
+git add -A .
+git commit --signoff
