@@ -1,6 +1,10 @@
 # Character Dev
 Unity projects for building characters including those built with Uma.
 
+# Assets
+These assets must be installed before the projects will open successfully.  
+Uma2
+
 ## links
 https://www.mixamo.com/#/?page=1&type=Character  
 https://git-lfs.github.com/  
