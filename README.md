@@ -1,5 +1,5 @@
-# UmaDev
-studio for building Uma Characters
+# Character Dev
+Unity projects for building characters including those built with Uma.
 
 ## links
 https://www.mixamo.com/#/?page=1&type=Character  
