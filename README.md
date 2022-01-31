@@ -5,6 +5,7 @@ Unity projects for building characters including those built with Uma.
 These assets must be installed before the projects will open successfully.  
 Uma2
 [Wizards Code Animation](https://github.com/TheWizardsCode/Animation)
+[Wizards Code Character](https://github.com/TheWizardsCode/Character)
 
 ## links
 https://www.mixamo.com/#/?page=1&type=Character  

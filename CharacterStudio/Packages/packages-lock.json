@@ -99,6 +99,20 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "wizardscode.animation": {
+      "version": "https://github.com/TheWizardsCode/Animation.git#release/stable",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2450fa5926b0e672dc6662bc62af05fa8f4e4fe2"
+    },
+    "wizardscode.character": {
+      "version": "https://github.com/TheWizardsCode/Character.git#release/stable",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "260deb6bc9c3187d6823532814ed1c71b040eee6"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
