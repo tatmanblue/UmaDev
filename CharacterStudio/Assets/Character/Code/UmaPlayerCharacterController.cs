@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace TatmanGames.Character
 {
-    public class UmaCharacterController : MonoBehaviour
+    public class UmaPlayerCharacterController : MonoBehaviour
     {
         public bool IsGrounded { get; private set; }
         public float ForwardInput { get; set; }

@@ -4,6 +4,8 @@ Unity projects for building characters including those built with Uma.
 # Assets
 These assets must be installed before the projects will open successfully.  
 Uma2  
+Cinemachine  
+## removed
 [Wizards Code Animation](https://github.com/TheWizardsCode/Animation)  
 [Wizards Code Character](https://github.com/TheWizardsCode/Character)  
 
