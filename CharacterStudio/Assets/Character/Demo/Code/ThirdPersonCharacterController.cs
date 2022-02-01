@@ -1,13 +1,17 @@
 ﻿using System;
 using UnityEngine;
 
-namespace TatmanGames.Character.Character.Demo.Code
+namespace TatmanGames.Character.Character.Demo
 {
     public class ThirdPersonCharacterController : MonoBehaviour
     {
         public CharacterController Controller;
-
+        public Transform cameraTransform;
+        
         public float Speed = 6f;
+        public float TurnSmoothTime = 0.1f;
+
+        private float turnSmoothVelocity = 0f;
         
         private void Update()
         {
@@ -17,7 +21,13 @@ namespace TatmanGames.Character.Character.Demo.Code
 
             if (direction.magnitude >= 0.1f)
             {
-                Controller.Move(direction * Speed * Time.deltaTime);
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, 
+                    ref turnSmoothVelocity, TurnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                Controller.Move(moveDirection.normalized * Speed * Time.deltaTime);
             }
         }
     }
