@@ -21,7 +21,8 @@ namespace TatmanGames.Character.Character.Demo
 
             if (direction.magnitude >= 0.1f)
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
+                float y = (cameraTransform != null ? cameraTransform.eulerAngles.y : 0f);
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, 
                     ref turnSmoothVelocity, TurnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
