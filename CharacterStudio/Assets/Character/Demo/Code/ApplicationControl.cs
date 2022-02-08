@@ -29,6 +29,9 @@ namespace TatmanGames.Character.Character.Demo
                 case 2:
                     SceneManager.LoadScene("UMAController");
                     break;
+                case 3:
+                    SceneManager.LoadScene("UnityController");
+                    break;
                 default:
                     break;
             }
