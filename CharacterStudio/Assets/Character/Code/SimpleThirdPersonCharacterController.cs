@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-namespace TatmanGames.Character.Character.Demo
+namespace TatmanGames.Character
 {
-    public class ThirdPersonCharacterController : MonoBehaviour
+    public class SimpleThirdPersonCharacterController : MonoBehaviour
     {
         public CharacterController Controller;
         public Transform cameraTransform;
@@ -13,7 +13,7 @@ namespace TatmanGames.Character.Character.Demo
 
         private float turnSmoothVelocity = 0f;
         
-        private void Update()
+        private void FixedUpdate()
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");

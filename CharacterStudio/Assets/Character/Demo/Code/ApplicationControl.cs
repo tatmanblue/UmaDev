@@ -32,9 +32,10 @@ namespace TatmanGames.Character.Character.Demo
 
         private IEnumerator ChangeScreen()
         {
-            // Screen.SetResolution();
+            Screen.fullScreen = !Screen.fullScreen;
+            yield return null;
             handlingKey = false;
-            return null;
+            yield return null;
         }
 
         public void ShowScene(int id)
