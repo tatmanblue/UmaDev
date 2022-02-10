@@ -7,6 +7,8 @@ namespace TatmanGames.Character.Character.Demo
 {
     public class ApplicationControl : MonoBehaviour
     {
+        private bool handlingKey = false;
+        
         // Update is called once per frame
         private void Update()
         {
@@ -17,6 +19,22 @@ namespace TatmanGames.Character.Character.Demo
                 else
                     SceneManager.LoadScene("Menu");
             }
+            
+            if (true == Input.GetKey(KeyCode.Space) && 
+                true == Input.GetKey(KeyCode.Return) &&
+                false == handlingKey)
+            {
+                handlingKey = true;
+                Debug.Log("got space + enter");
+                StartCoroutine("ChangeScreen");
+            }
+        }
+
+        private IEnumerator ChangeScreen()
+        {
+            // Screen.SetResolution();
+            handlingKey = false;
+            return null;
         }
 
         public void ShowScene(int id)
