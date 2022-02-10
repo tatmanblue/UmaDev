@@ -5,6 +5,7 @@ Unity projects for building characters including those built with Uma.
 These assets must be installed before the projects will open successfully.  
 Cinemachine    
 TextMeshPro  
+[Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)  
 Uma2  
 
 
