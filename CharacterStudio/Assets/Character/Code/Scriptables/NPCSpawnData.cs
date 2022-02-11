@@ -17,7 +17,16 @@ namespace TatmanGames.Character.Scriptables
             get { return id; }
         }
 
+        public GameObject NPCAvatar {
+            get
+            {
+                return npcAvatar;
+            }
+        }
+
+
         [SerializeField] private int id;
+        [SerializeField] private GameObject npcAvatar;
     }
 
 }

@@ -10,5 +10,6 @@ namespace TatmanGames.Character.Interfaces
         /// an Id for the NPC instance
         /// </summary>
         int Id { get; }
+        GameObject NPCAvatar { get; }
     }
 }
