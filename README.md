@@ -1,6 +1,10 @@
 # Character Dev
 Unity projects for building characters including those built with Uma.
 
+Projects
+Projects are exported from this project as unity assets and imported into consumer projects.  
+[Character Engine](https://github.com/tatmanblue/Unity-Characters/tree/main/CharacterStudio/Assets/Character)  
+
 ## Format/Platforms
 Unity Game.   
 
@@ -32,6 +36,7 @@ https://www.youtube.com/playlist?list=PLkDHFObfS19zFVfbrfB14P-u5QJJQyvtP
 ## other possible assets
 https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271  
 https://assetstore.unity.com/packages/3d/characters/humanoids/humans/3d-character-dummy-178395#description  
+https://willbgameart.com/  
 
 ## Status
 On-going/Active

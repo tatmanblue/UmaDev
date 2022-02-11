@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TatmanGames.Character
+namespace TatmanGames.Character.CharacterControllers
 {
     [Obsolete("this doesnt work yet")]
     public class UmaPlayerCharacterController : MonoBehaviour

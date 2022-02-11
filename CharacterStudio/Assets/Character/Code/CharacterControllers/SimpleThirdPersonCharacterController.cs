@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace TatmanGames.Character
+namespace TatmanGames.Character.CharacterControllers
 {
     public class SimpleThirdPersonCharacterController : MonoBehaviour
     {
