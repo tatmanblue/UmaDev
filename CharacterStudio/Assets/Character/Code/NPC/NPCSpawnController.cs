@@ -29,6 +29,7 @@ namespace TatmanGames.Character.NPC
                 }
                 
                 Debug.Log($"Spawning {data.Data.Id}");
+                // TODO move this to the engine?
                 Instantiate(data.Data.NPCAvatar, pointData.transform.position, pointData.transform.rotation);
             }
         }
