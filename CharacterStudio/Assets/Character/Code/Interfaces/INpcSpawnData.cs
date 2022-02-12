@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace TatmanGames.Character.Interfaces
 {
-    public interface INPCSpawnData
+    public interface INpcSpawnData
     {
         /// <summary>
         /// an Id for the NPC instance
         /// </summary>
         int Id { get; }
-        GameObject NPCAvatar { get; }
+        GameObject NpcAvatar { get; }
     }
 }

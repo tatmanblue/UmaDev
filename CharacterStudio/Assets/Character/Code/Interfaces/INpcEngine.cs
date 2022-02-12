@@ -3,11 +3,12 @@ using UnityEngine;
 
 namespace TatmanGames.Character.Interfaces
 {
-    public interface INPCEngine
+    public interface INpcEngine
     {
         string SpawnTag { get; }
         event NpcInstantiated OnNpcInstantiated;
+        event NpcAutoSpawningCompleted OnAutoSpawningComplete;
         
-        void Instantiate(GameObject something, INPCSpawnPoint point);
+        GameObject Instantiate(GameObject something, INpcSpawnPoint point);
     }
 }

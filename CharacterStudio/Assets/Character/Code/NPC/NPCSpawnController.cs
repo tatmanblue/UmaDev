@@ -11,9 +11,13 @@ namespace TatmanGames.Character.NPC
     /// </summary>
     public class NPCSpawnController : MonoBehaviour
     {
-        private INPCEngine engine = new NPCEngine();
         private void Awake()
         {
+            if (null == NPCServiceLocator.Instance.Engine)
+                NPCServiceLocator.Instance.Engine = new NPCEngine();
+
+            INpcEngine engine = NPCServiceLocator.Instance.Engine;
+            
             GameObject[] respawns = GameObject.FindGameObjectsWithTag(engine?.SpawnTag);
             if (null == respawns)
                 return;
