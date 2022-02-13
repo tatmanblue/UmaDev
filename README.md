@@ -18,15 +18,17 @@ If you have any questions about the content of the repository, please email [mat
 
 # Assets
 These assets must be installed before the projects will open successfully.  
-Cinemachine    
+[Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.6/manual/index.html)  
 [Text Mesh Pro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)  
 [Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)  
-Uma2  
+[Uma2](https://assetstore.unity.com/packages/3d/characters/uma-2-unity-multipurpose-avatar-35611)  
 
 
 ## Reference material
 https://www.youtube.com/watch?v=4HpC--2iowE *  
+https://www.youtube.com/watch?v=e94KggaEAr4 * 
 
+https://www.youtube.com/watch?v=P_ibDJhFVMU  
 https://www.mixamo.com/#/?page=1&type=Character  
 https://git-lfs.github.com/  
 https://tutorials.eu/how-to-use-character-animation-from-mixamo-website-in-unity-2019-4/  
