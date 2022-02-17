@@ -28,6 +28,8 @@ These assets must be installed before the projects will open successfully.
 https://www.youtube.com/watch?v=4HpC--2iowE *  
 https://www.youtube.com/watch?v=e94KggaEAr4 * 
 
+https://github.com/peeweek/net.peeweek.third-person-controller  
+https://github.com/dbrizov/NaughtyCharacter  
 https://www.youtube.com/watch?v=P_ibDJhFVMU  
 https://www.mixamo.com/#/?page=1&type=Character  
 https://git-lfs.github.com/  
