@@ -17,6 +17,7 @@ You must have the 3rd party assets installed prior to opening any of scenes.   I
 
 ### 3rd Party Assets 
 [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.6/manual/index.html)  
+[Hud Navigation System](https://assetstore.unity.com/packages/tools/gui/hud-navigation-system-103056)  
 [Text Mesh Pro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)  
 [Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)  
 [Uma2](https://assetstore.unity.com/packages/3d/characters/uma-2-unity-multipurpose-avatar-35611)  
