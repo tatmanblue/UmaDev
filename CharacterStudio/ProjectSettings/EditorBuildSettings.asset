@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Character/Demo/Scenes/UnityController.unity
     guid: 48f267d3e33651a409f51ccc119bc9c1
+  - enabled: 1
+    path: Assets/Character/Demo/Scenes/ObsiveUma.unity
+    guid: 49b68af892984934e9cf3aba2713dfe9
   m_configObjects: {}
