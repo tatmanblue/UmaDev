@@ -5,6 +5,8 @@ Projects
 Projects are exported from this project as unity assets and imported into consumer projects.  
 [Character Engine](https://github.com/tatmanblue/Unity-Characters/tree/main/CharacterStudio/Assets/Character)  
 
+Documentation for using the Character engine is found [here](Docs/NPCS.md).  
+
 ## Format/Platforms
 Unity Game.   
 

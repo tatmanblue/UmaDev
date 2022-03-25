@@ -28,6 +28,12 @@ namespace TatmanGames.Character.NPC
             InitializeDefaults();
 
             engine = GlobalServicesLocator.Instance.GetService<INpcEngine>();
+            
+            // this can seem confusing that we get INpcSpawnController from service locator
+            // when this type implements INpcSpawnController.  The reason is 
+            // we want to allow consumers to replace the implementation of INpcSpawnController here
+            // with a customized solution.  
+            // TODO but this still seems hokey
             INpcSpawnController controller = GlobalServicesLocator.Instance.GetService<INpcSpawnController>();
             
             GameObject[] respawns = controller.GetAllNpcSpawnPoints();
