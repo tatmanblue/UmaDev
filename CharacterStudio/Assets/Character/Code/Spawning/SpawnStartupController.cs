@@ -5,7 +5,7 @@ using TatmanGames.Common;
 using TatmanGames.Common.ServiceLocator;
 using UnityEngine;
 
-namespace TatmanGames.Character.NPC
+namespace TatmanGames.Character.Spawning
 {
     /// <summary>
     /// applied to a prefab in a scene, an awake it will

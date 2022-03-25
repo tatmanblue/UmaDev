@@ -1,7 +1,7 @@
 ﻿using TatmanGames.Character.Interfaces;
 using UnityEngine;
 
-namespace TatmanGames.Character.NPC
+namespace TatmanGames.Character.Spawning
 {
     public class SpawnEngine : ISpawnEngine
     {
@@ -11,7 +11,7 @@ namespace TatmanGames.Character.NPC
 
         public GameObject Instantiate(GameObject something, ISpawnPoint point)
         {
-            GameObject npc = GameObject.Instantiate(point.Data.NpcAvatar, something.transform.position, something.transform.rotation);
+            GameObject npc = GameObject.Instantiate(point.Data.SpawnableObject, something.transform.position, something.transform.rotation);
             FireOnNpcInstantiated(point, npc);
             return npc;
         }

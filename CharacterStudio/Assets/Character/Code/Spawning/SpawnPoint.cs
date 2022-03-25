@@ -2,7 +2,7 @@
 using TatmanGames.Character.Scriptables;
 using UnityEngine;
 
-namespace TatmanGames.Character.NPC
+namespace TatmanGames.Character.Spawning
 {
     public class SpawnPoint : MonoBehaviour, ISpawnPoint
     {

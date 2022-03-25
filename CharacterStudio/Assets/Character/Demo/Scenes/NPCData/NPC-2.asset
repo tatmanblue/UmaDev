@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NPC-2
   m_EditorClassIdentifier: 
   id: 2
-  npcAvatar: {fileID: 8026149164042250231, guid: 897661a21d50a6b4c883c5ecacc8f9b3, type: 3}
+  spawnableObject: {fileID: 8026149164042250231, guid: 897661a21d50a6b4c883c5ecacc8f9b3, type: 3}
