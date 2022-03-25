@@ -4,7 +4,7 @@ namespace TatmanGames.Character.Interfaces
 {
     public interface INpcSpawnController
     {
-        bool CanSpawnAtStartup(INpcSpawnPoint point);
+        bool CanSpawnAtStartup(ISpawnPoint point);
         GameObject[] GetAllNpcSpawnPoints();
     }
 }

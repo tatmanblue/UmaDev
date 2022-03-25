@@ -1,8 +1,8 @@
-# NPC Engine
+# Spawning Engine
 
 ## Overview
 
-## Setting up NPC with Scriptable Object
+## Setting up spawning with Scriptable Object
 1. Create an instance of the `NPCSpawnData` scriptable object.  Easiest solution is, in unity project window, right click and select
 `SpawnData` from the `Tatman Games/NPC Spawn Data` menu choice.
 

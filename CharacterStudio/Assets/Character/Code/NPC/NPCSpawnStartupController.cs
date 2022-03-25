@@ -43,7 +43,7 @@ namespace TatmanGames.Character.NPC
             Debug.Log($"found {respawns?.Length} spawn points");
             foreach (GameObject pointData in respawns)
             {
-                INpcSpawnPoint data = pointData.GetComponent<INpcSpawnPoint>();
+                ISpawnPoint data = pointData.GetComponent<ISpawnPoint>();
                 if (null == data)
                 {
                     Debug.Log("failed to find INPCSpawnData");
@@ -87,7 +87,7 @@ namespace TatmanGames.Character.NPC
             }
         }
 
-        public bool CanSpawnAtStartup(INpcSpawnPoint point)
+        public bool CanSpawnAtStartup(ISpawnPoint point)
         {
             return true;
         }

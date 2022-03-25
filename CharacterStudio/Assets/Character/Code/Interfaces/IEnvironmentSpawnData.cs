@@ -6,15 +6,14 @@ namespace TatmanGames.Character.Interfaces
 {
     /// <summary>
     /// This is the data the engine and controller will use to initialize and place
-    /// an Npc in the scene.
+    /// an something into in the scene.
     ///
-    /// TODO:  perhaps this could be refactored into an environment spawner (aka)
-    /// TODO:  any game object not just an NPC 
+    /// TODO: not sure this should live in the character namespace any more
     /// </summary>
-    public interface INpcSpawnData
+    public interface IEnvironmentSpawnData
     {
         /// <summary>
-        /// an Id for the NPC instance
+        /// an Id for the instance
         /// keep it unique so that consumers can identity the npc instance easily
         /// </summary>
         int Id { get; }

@@ -13,6 +13,6 @@ namespace TatmanGames.Character.Interfaces
         event NpcInstantiated OnNpcInstantiated;
         event NpcAutoSpawningCompleted OnAutoSpawningComplete;
         
-        GameObject Instantiate(GameObject something, INpcSpawnPoint point);
+        GameObject Instantiate(GameObject something, ISpawnPoint point);
     }
 }

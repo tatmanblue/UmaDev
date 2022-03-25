@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace TatmanGames.Character.NPC
 {
-    public class NPCSpawnPoint : MonoBehaviour, INpcSpawnPoint
+    public class SpawnPoint : MonoBehaviour, ISpawnPoint
     {
-        public INpcSpawnData Data
+        public IEnvironmentSpawnData Data
         {
             get
             {
@@ -15,6 +15,6 @@ namespace TatmanGames.Character.NPC
             
         }
         
-        [SerializeField] private NPCSpawnData spawnData;
+        [SerializeField] private EnvironmentSpawnData spawnData;
     }
 }

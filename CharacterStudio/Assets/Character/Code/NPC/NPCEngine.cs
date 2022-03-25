@@ -9,14 +9,14 @@ namespace TatmanGames.Character.NPC
         public event NpcInstantiated OnNpcInstantiated;
         public event NpcAutoSpawningCompleted OnAutoSpawningComplete;
 
-        public GameObject Instantiate(GameObject something, INpcSpawnPoint point)
+        public GameObject Instantiate(GameObject something, ISpawnPoint point)
         {
             GameObject npc = GameObject.Instantiate(point.Data.NpcAvatar, something.transform.position, something.transform.rotation);
             FireOnNpcInstantiated(point, npc);
             return npc;
         }
 
-        private void FireOnNpcInstantiated(INpcSpawnPoint point, GameObject npc)
+        private void FireOnNpcInstantiated(ISpawnPoint point, GameObject npc)
         {
             NpcInstantiated instantiated = OnNpcInstantiated;
             if (null == instantiated)
