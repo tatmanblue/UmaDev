@@ -1,5 +1,6 @@
 # Character Dev
-Unity projects for building characters including those built with Uma.
+Unity projects for building characters including those built with Uma.  Includes other environment related functions.  Probably will
+add some kind of inventory system soon.
 
 Projects
 Projects are exported from this project as unity assets and imported into consumer projects.  
