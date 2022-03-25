@@ -11,9 +11,9 @@ namespace TatmanGames.Character.NPC
     /// applied to a prefab in a scene, an awake it will
     /// find all prefabs with INPCEngine.SpawnTag set up the NPCs
     /// </summary>
-    public class NPCSpawnStartupController : MonoBehaviour, INpcSpawnController
+    public class SpawnStartupController : MonoBehaviour, ISpawnController
     {
-        private INpcEngine engine = null;
+        private ISpawnEngine engine = null;
         private bool hasLoaded = false;
 
         private void Update()
@@ -27,14 +27,14 @@ namespace TatmanGames.Character.NPC
         {
             InitializeDefaults();
 
-            engine = GlobalServicesLocator.Instance.GetService<INpcEngine>();
+            engine = GlobalServicesLocator.Instance.GetService<ISpawnEngine>();
             
             // this can seem confusing that we get INpcSpawnController from service locator
             // when this type implements INpcSpawnController.  The reason is 
             // we want to allow consumers to replace the implementation of INpcSpawnController here
             // with a customized solution.  
             // TODO but this still seems hokey
-            INpcSpawnController controller = GlobalServicesLocator.Instance.GetService<INpcSpawnController>();
+            ISpawnController controller = GlobalServicesLocator.Instance.GetService<ISpawnController>();
             
             GameObject[] respawns = controller.GetAllNpcSpawnPoints();
             if (null == respawns)
@@ -70,20 +70,20 @@ namespace TatmanGames.Character.NPC
             try
             {
                 // because we can't ask if the service exists
-                GlobalServicesLocator.Instance.GetService<INpcEngine>();
+                GlobalServicesLocator.Instance.GetService<ISpawnEngine>();
             }
             catch (ServiceLocatorException)
             {
-                GlobalServicesLocator.Instance.AddService<INpcEngine>(new NPCEngine());
+                GlobalServicesLocator.Instance.AddService<ISpawnEngine>(new SpawnEngine());
             }
 
             try
             {
-                GlobalServicesLocator.Instance.GetService<INpcSpawnController>();
+                GlobalServicesLocator.Instance.GetService<ISpawnController>();
             }
             catch (ServiceLocatorException)
             {
-                GlobalServicesLocator.Instance.AddService<INpcSpawnController>( this);
+                GlobalServicesLocator.Instance.AddService<ISpawnController>( this);
             }
         }
 

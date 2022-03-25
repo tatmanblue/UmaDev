@@ -11,6 +11,6 @@
     /// </summary>
     public interface ISpawnPoint
     {
-        IEnvironmentSpawnData Data { get; }
+        ISpawnData Data { get; }
     }
 }

@@ -6,7 +6,7 @@ namespace TatmanGames.Character.NPC
 {
     public class SpawnPoint : MonoBehaviour, ISpawnPoint
     {
-        public IEnvironmentSpawnData Data
+        public ISpawnData Data
         {
             get
             {
@@ -15,6 +15,6 @@ namespace TatmanGames.Character.NPC
             
         }
         
-        [SerializeField] private EnvironmentSpawnData spawnData;
+        [SerializeField] private SpawnData spawnData;
     }
 }

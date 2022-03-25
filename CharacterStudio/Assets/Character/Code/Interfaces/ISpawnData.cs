@@ -10,7 +10,7 @@ namespace TatmanGames.Character.Interfaces
     ///
     /// TODO: not sure this should live in the character namespace any more
     /// </summary>
-    public interface IEnvironmentSpawnData
+    public interface ISpawnData
     {
         /// <summary>
         /// an Id for the instance

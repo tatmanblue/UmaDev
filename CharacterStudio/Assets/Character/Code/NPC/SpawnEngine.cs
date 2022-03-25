@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace TatmanGames.Character.NPC
 {
-    public class NPCEngine : INpcEngine
+    public class SpawnEngine : ISpawnEngine
     {
         public string SpawnTag { get; private set; } = "NPCSpawn";
-        public event NpcInstantiated OnNpcInstantiated;
-        public event NpcAutoSpawningCompleted OnAutoSpawningComplete;
+        public event GameObjectInstantiated OnNpcInstantiated;
+        public event GameObjectAutoSpawningCompleted OnAutoSpawningComplete;
 
         public GameObject Instantiate(GameObject something, ISpawnPoint point)
         {
@@ -18,7 +18,7 @@ namespace TatmanGames.Character.NPC
 
         private void FireOnNpcInstantiated(ISpawnPoint point, GameObject npc)
         {
-            NpcInstantiated instantiated = OnNpcInstantiated;
+            GameObjectInstantiated instantiated = OnNpcInstantiated;
             if (null == instantiated)
                 return;
 
@@ -27,7 +27,7 @@ namespace TatmanGames.Character.NPC
 
         private void FireAutoSpawningComplete()
         {
-            NpcAutoSpawningCompleted completed = OnAutoSpawningComplete;
+            GameObjectAutoSpawningCompleted completed = OnAutoSpawningComplete;
             if (null == completed)
                 return;
 

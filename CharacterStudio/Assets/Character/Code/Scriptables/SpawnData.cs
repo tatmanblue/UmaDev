@@ -10,7 +10,7 @@ namespace TatmanGames.Character.Scriptables
     /// a persisted view, so to speak, into a model INPCSpawnData
     /// </summary>
     [CreateAssetMenu(fileName = "SpawnData", menuName = "Tatman Games/NPC Spawn Data")]
-    public class EnvironmentSpawnData : ScriptableObject, IEnvironmentSpawnData
+    public class SpawnData : ScriptableObject, ISpawnData
     {
         public int Id
         {
