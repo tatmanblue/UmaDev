@@ -5,7 +5,7 @@ namespace TatmanGames.Character.Spawning
 {
     public class SpawnEngine : ISpawnEngine
     {
-        public string SpawnTag { get; private set; } = "NPCSpawn";
+        public string SpawnTag { get; private set; } = "SpawnPoint";
         public event GameObjectInstantiated OnNpcInstantiated;
         public event GameObjectAutoSpawningCompleted OnAutoSpawningComplete;
 

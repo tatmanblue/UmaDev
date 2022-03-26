@@ -89,7 +89,7 @@ namespace TatmanGames.Character.Spawning
 
         public bool CanSpawnAtStartup(ISpawnPoint point)
         {
-            return true;
+            return point.Data.SpawnOnStart;
         }
 
         public GameObject[] GetAllNpcSpawnPoints()
