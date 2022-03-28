@@ -4,6 +4,7 @@ using TatmanGames.Character.Interfaces;
 using TatmanGames.Common;
 using TatmanGames.Common.ServiceLocator;
 using UnityEngine;
+using ILogger = TatmanGames.Common.Interfaces.ILogger;
 
 namespace TatmanGames.Character.Spawning
 {
@@ -40,20 +41,20 @@ namespace TatmanGames.Character.Spawning
             if (null == respawns)
                 return;
             
-            Debug.Log($"found {respawns?.Length} spawn points");
+            Log($"found {respawns?.Length} spawn points");
             foreach (GameObject pointData in respawns)
             {
                 ISpawnPoint data = pointData.GetComponent<ISpawnPoint>();
                 if (null == data)
                 {
-                    Debug.Log("failed to find INPCSpawnData");
+                    Log("failed to find INPCSpawnData");
                     continue;
                 }
                 
                 if (false == controller?.CanSpawnAtStartup(data))
                     continue;
                 
-                Debug.Log($"Spawning {data.Data.Id}");
+                Log($"Spawning {data.Data.Id}");
                 engine?.Instantiate(pointData, data);
                 
                 if (true == data.Data.DestroyPointOnSpawn)
@@ -85,6 +86,12 @@ namespace TatmanGames.Character.Spawning
             {
                 GlobalServicesLocator.Instance.AddService<ISpawnController>( this);
             }
+        }
+
+        private void Log(string msg)
+        {
+            TatmanGames.Common.Interfaces.ILogger logger = GlobalServicesLocator.Instance.GetService<ILogger>();
+            logger.Log(msg);
         }
 
         public bool CanSpawnAtStartup(ISpawnPoint point)
