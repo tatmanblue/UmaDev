@@ -15,6 +15,6 @@ namespace TatmanGames.Character.Interfaces
         event GameObjectInstantiated OnNpcInstantiated;
         event GameObjectAutoSpawningCompleted OnAutoSpawningComplete;
         
-        GameObject Instantiate(GameObject something, ISpawnPoint point);
+        GameObject Instantiate(GameObject centersOn, ISpawnPoint point);
     }
 }

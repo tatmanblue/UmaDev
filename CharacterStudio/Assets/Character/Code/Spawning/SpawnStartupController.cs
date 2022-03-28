@@ -57,6 +57,7 @@ namespace TatmanGames.Character.Spawning
                 Log($"Spawning {data.Data.Id}");
                 engine?.Instantiate(pointData, data);
                 
+                // TODO is this behavior belonging in the engine?
                 if (true == data.Data.DestroyPointOnSpawn)
                     Destroy(pointData);
             }
