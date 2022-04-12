@@ -12,11 +12,11 @@ namespace TatmanGames.Character.Spawning
         public GameObject Instantiate(GameObject centersOn, ISpawnPoint point)
         {
             GameObject npc = GameObject.Instantiate(point.Data.SpawnableObject, centersOn.transform.position, centersOn.transform.rotation);
-            FireOnNpcInstantiated(point, npc);
+            FireOnInstantiated(point, npc);
             return npc;
         }
 
-        private void FireOnNpcInstantiated(ISpawnPoint point, GameObject npc)
+        private void FireOnInstantiated(ISpawnPoint point, GameObject npc)
         {
             GameObjectInstantiated instantiated = OnNpcInstantiated;
             if (null == instantiated)
